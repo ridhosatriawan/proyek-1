@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>
+          Formulir Pendaftaran <br />
+          Anggota Kloso
+        </h1>
+        <form action="#">
+          <div class="wrapper-input">
+            <label for="nama" class="label"> Nama Lengkap : </label>
+            <br />
+            <input
+              type="text"
+              name="namaLengkap"
+              id="nama"
+              placeholder="Nama Lengkap"
+              class="text"
+            />
+          </div>
+          <div class="wrapper-input">
+            <label for="angkatan" class="label">Angkatan : </label><br />
+            <input
+              type="text"
+              name="angkatan"
+              id="angkatan"
+              class="text"
+              placeholder="Angkatan"
+            />
+          </div>
+          <div class="wrapper-input">
+            <label for="jurusan" class="label">Jurusan : </label><br />
+            <input type="radio" name="jurusan" id="ti" />
+            <label for="ti">S1 TI</label>
+            <input type="radio" name="jurusan" id="mi" />
+            <label for="mi">D3 MI</label>
+          </div>
+          <div class="wrapper-input">
+            <label for="kelamin" class="label">Jenis Kelamin : </label><br />
+            <input type="radio" name="jenisKelamin" id="lakiLaki" />
+            <label for="lakiLaki">Laki-Laki</label>
+            <input type="radio" name="jenisKelamin" id="perempuan" />
+            <label for="perempuan">Perempuan</label>
+          </div>
+          <div class="wrapper-input">
+            <label for="alasan" class="label">Alasan Ikut UKM Kloso :</label><br />
+            <textarea
+              name="alasan"
+              id="alasan"
+              cols="30"
+              rows="5"
+              class="text"
+              placeholder="Alasan Mengikuti Kloso"
+            ></textarea>
+          </div>
+          <div class="wrapper-input">
+            <label class="label">Upload Foto</label><br />
+            <input type="file" name="foto" id="foto" />
+            <label for="foto" class="label-foto">Pilih Foto</label><br />
+          </div>
+          <button class="daftar" type="submit">Daftar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
